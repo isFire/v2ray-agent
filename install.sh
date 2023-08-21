@@ -2354,8 +2354,7 @@ EOF
      {
         "id": "${uuid}",
         "add":"${add}",
-        "flow":"xtls-rprx-direct",
-        "email": "${domain}_VLESS_XTLS/TLS-direct_TCP"
+        "email": "${domain}_VLESS_TLS/TLS-direct_TCP"
       }
     ],
     "decryption": "none",
@@ -2365,8 +2364,8 @@ EOF
   },
   "streamSettings": {
     "network": "tcp",
-    "security": "xtls",
-    "xtlsSettings": {
+    "security": "tls",
+    "tlsSettings": {
       "minVersion": "1.2",
       "alpn": [
         "http/1.1",
